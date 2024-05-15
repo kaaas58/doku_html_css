@@ -1,0 +1,16 @@
+/*  klassenselektoren  */
+.gefahr{
+    color: red;
+}
+.wichtig{
+    font-weight: bold;
+}
+
+/* Typselektor in Kombi mit Klassenselektoren */
+
+p.gefahr{
+    text-decoration: underline;
+}
+span.wichtig{
+    background-color: grey;
+}
