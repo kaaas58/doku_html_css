@@ -1,0 +1,6 @@
+/* (#)Id-selektoren immer einziartig    Bsp. id="one" / #one{  }  */
+/* (.)Klassen-Selektoren                Bsp. class="one" / .one{  }  */
+/*  Klassenselektoren                   Bsp. button   /  button  */
+#warnung{
+   color: orange; 
+}

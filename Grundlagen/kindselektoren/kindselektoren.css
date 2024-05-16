@@ -1,0 +1,22 @@
+p > span{
+    color: red;
+}
+
+p > b{
+    color: blue;
+}
+
+span > b{
+    color: rgb(0, 255, 123);
+}
+
+
+/* Kindselektor ist mächtiger als der Tyselektor */
+html > body > p > span > i {
+    color:rgb(255, 0, 183);
+    font-weight: bold;
+}
+
+/* i{
+    color:aqua;
+} */
