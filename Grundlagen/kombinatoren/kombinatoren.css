@@ -1,0 +1,66 @@
+/* GeschwisterSelektor ~ wählt ein nachfolgendes Geschwister aus, 
+dabei können auch ander elemente im Weg sein solange es die selbe 
+Ebene ist. Obwohl ein u-Element dazwischen steht, greift der GeschwisterSelektor.
+Er bezieht sich ledigtlich auf selbe Ebene.
+
+
+Ein direkters Kindelement muss nicht als erstes aber in dem vorselektierten Element vorhanden sein.
+b ~ span > b 
+Hier ist wichtig das das kinelement in dem voherigen ist. also eine Ebene tiefer.
+
+<b>Dieß ist fett gedruckter Text</b>
+<u id="wichtig">Dießer Text ist unterstrichen</u>
+<span>
+        <u>dsdfs</u>
+        Dies ist Text in einer Spann.
+        <b>Dieß ist fett gedruckter Text </b>       <-------
+</span>
+
+/* geschwisterSelektor (~) gleiche Ebene | Kindelement (>) eine Ebene drunter / 
+in Elternelement z.b. span > b . Ebenen wichtig, direkt darauf folgen nicht. */
+b ~ span > b{
+    color: red;
+}
+
+
+/* Alle span mit der Klasse .warnung die sich in einem p Element befinden, 
+    egal in wie tiefer Ebene werden ausgewählt.
+    
+    Bei p > span.warnung währe es nur die Kind, also eine Ebene tiefer, was ausgewählt werden würde. */
+
+/* 2 typSelektoren mit nachfahrenSelektoren.  
+=> span mit der Klasse.warnung muss in p Element sein. */
+p span.warnung{
+    background-color: pink;
+}
+
+/* Klasse .warnung  ~ geschwisterSelektor = selbe Ebene / typSelektor b */
+.warnung ~ b{
+    background-color: gray;
+}
+
+/* TypSelektor html, nachfahre(alle head in html) TypSelektor head / 
+    head muss in body sein, ~ Geschwister, selbe Ebene body */
+/* altanativ geht in dem Fall auch --> 
+    html > (KindSelektor/Ebene tiefer) head ~ (GeschwisterSelektor/selbe Ebene) body
+/* > (KindElement/Ebene tiefer) p-Element, > (KindElement/Ebene tifer) b-Element 
+    GeschwisterSelektor id=#wichtig*/
+/* html > head ~ body > p > b ~ #wichtig { */
+html head ~ body > p > b ~  #wichtig{
+    font-size: 100px;
+    color: green;
+}
+
+/* bei id kann man immer direkt zugreifen */
+
+#wichtig{
+    background-color: yellow;
+}
+
+
+/* html head = nachfahre
+head ~ body = GeschwisterSelektor = Selbe Ebene
+body > p = KindSelektor = p eiene Ebene tiefer als body
+.Klasse n Selektor
+#id Selektor 
+p = ElementSelektor */

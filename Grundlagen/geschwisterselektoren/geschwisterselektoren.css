@@ -1,0 +1,10 @@
+/* wählt alle folgenden i innerhalb des span auf selber Ebene */
+
+span ~ i {
+    color: red;
+}
+
+/* wählt alle b die auf das i folgen, nur in selber Ebene */
+i ~ b {
+    color: blue;
+}

@@ -12,10 +12,13 @@ span > b{
 
 
 /* Kindselektor ist mächtiger als der Tyselektor */
+/* wir sparen id s und Klassen */
 html > body > p > span > i {
     color:rgb(255, 0, 183);
     font-weight: bold;
 }
+
+/* typselector */
 
 /* i{
     color:aqua;
