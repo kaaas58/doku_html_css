@@ -1,0 +1,11 @@
+#vordefiniert{
+    height: 300px;
+    width: 300px;
+    background-color: olivedrab;
+}
+
+#hex{
+    height: 300px;
+    width: 300px;
+    background-color: #FF0000;
+}

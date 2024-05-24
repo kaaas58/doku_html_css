@@ -1,0 +1,38 @@
+#absolut{
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    background-color: #f00;
+}
+
+/* Relative Größe = skallierbar */
+/* Die Prozentangaben beziehen sich immer auf die Größe des Elternelements
+in dem Fall 20% vom Body-Element. */
+#prozent{
+    width: 20%;
+    height: 20%;
+    background-color: #0f0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-size: 20px;
+}
+
+/* em bezieht sich immer auf die Größe des Eltern-Elements */
+#em{
+    font-size: 2em;
+}
+
+.em{
+    font-size: 2em;
+}
+
+/* rem bezieht sich auf das Wurzekl-Element, auf das Root-Element */
+.rem{
+    font-size: 2rem;
+}
