@@ -1,0 +1,31 @@
+div{
+    background-color: grey;
+    width: 300px;
+    height: 300px;
+
+    padding: 50px;
+    margin: 100px;
+    
+    border: 20px solid rgb(210, 210, 210);
+}
+
+
+/* Inhalt, in dem Fall über div 300px + 300px */
+
+/* padding = 
+Innenabstand von div Kante nach innen <-- zum inhalt hin. */
+
+/* border z.B. 20px kommt auf dei hühe und Weite des difs drauf 320px * 320 px
+und das ganze Element wird ebenfalls um 20px nach rechts und um 20 px nach unten verschoben */
+
+/* margin = 
+Außenabsatand von div Ausenkante bis zu Element was div umgibt / nach außen */
+
+
+/* Insgesammt ist zu sagen width/height + [padding auf beiden Seiten 
+(rechts/links) || (oben/unten) also *2] + [border auf beiden seiten, je Achse]
+
+
+Also  ->  [ 300px + (50px*2) + (20px*2) = 440px ] + unsichtbarer Rand margin 100px
+
+      ->  [ 440px + (100px*2) = 640px ] */
