@@ -1,0 +1,36 @@
+/* Schriftarten
+
+ font-faces immer am anfang einer CSS deklarieren, da sonst Fehler auftreten.
+
+Internetexplorer, Edge                                      .eot   EmbettedOpenType  
+So gut wie alle BR, besonders gut für andriod safari ios.   .ttf    TrueType-Fonts 
+Probleme bei altem InternetExplorer                         .otf    OpenType-Fonts
+Fast alle bis auf alte InternetExplorer, Besonders gut      .woff   WebOpenFontFormed
+bei modernen Browsern.
+Für aller modernste Browser Chrome ios Firefox              .woff2  WebOpenFontFormed2      */
+
+
+@font-face{
+    font-family: "spectral";
+    src:    url(spectral-regular.ttf) format("truetype"), 
+            url(spectral-regular.woff2) format("woff2");
+    font-style: normal;
+     font-weight: normal;       /* 400=normal 700=bold */
+}
+     @font-face{
+    font-family: "spectral";
+    src:    url(spectral-bold.woff2) format("woff2");
+    font-style: normal;
+     font-weight: 700;       /* 400=normal 700=bold */
+}
+     @font-face{
+    font-family: "spectral";
+    src:    url(spectral-italic.woff2) format("woff2");
+    font-style: italic;
+     font-weight: normal;       /* 400=normal 700=bold */
+}
+
+body{
+    font-family: spectral;
+    font-style: italic;
+}
