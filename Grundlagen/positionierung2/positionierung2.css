@@ -1,0 +1,35 @@
+body{
+    height: 10000px ;
+}
+
+#fixedDiv{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    position: fixed;    
+    
+    /*Mit Position fixed richtet sich das Element am ViewPort aus. 
+    In dem Fall Abstand von Rechts und Abstand von unten/bottom 
+    z.b. bottom:0 right:0=Element ist von unten und von rechts 0 Pixel entfernt. 
+    += ist fixed, Heisst auch beim scrollen Bleibt es dort. Wie gesagt am ViewPort ausgerichted. */
+    
+    right: 10px;
+    bottom: 10px;
+}
+
+#stickyDiv{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: sticky;
+    /* Mann kann mit sticky eine Pos angeben an dem das Element beim scrollen nicht 
+    mehr weiterverschoben wird und mit margin die Startposition.. z.B. */
+    top: 50px;
+    left: 50px;
+    margin-top: 850px;
+}
+
+span{
+    /* Defaultwert der alles ignoriert.. wie top...px bottom....px right...px left ...px */
+    position: static; 
+}
