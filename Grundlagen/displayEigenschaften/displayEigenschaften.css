@@ -1,0 +1,34 @@
+/* Blockelementen kann mann width und height geben. 
+Inline Elementen nicht, sie sind so groß wie ihr inhalt. */
+
+/* Wir können mit der Display-Eigenschaft aus (Block-ERlementen -> Inline-Elemente) machen und 
+    aus (Inline-Elementen -> Block-Elemente). */
+
+/* Wir können aus Inline-Elementen oder aus Block-Elementen -> (Inline-Block-Elemente) machen.
+    Es sind dann Block-Elemente die Inline dargestellt werden. 
+    So kann troz Inline-Elementen eine width und height vergeben werden.*/
+
+.test1{
+    display: block;
+    background-color: #f00;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.test2{
+    width: 300px;
+    height: 300px;
+    background-color: #0f0;
+    margin-bottom: 20px;
+    display: inline;
+}
+
+.test3{
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+    margin-bottom: 20px;
+    color: #fff;
+    display: inline-block;
+}

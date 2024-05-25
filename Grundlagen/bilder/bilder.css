@@ -1,0 +1,18 @@
+/* Wir setzen width auf auto um das Bild nicht zu verzerren. Damit das Seitenverhältnis bestehen bleibt. */
+
+/* Live gehen nur mit Bildern mit Bildrechten oder frei. */
+
+/* Bilder sind inline-Block-Elemente */
+
+/* Bilder über url einzubinden hat offt folgen, wenn man die Rechte nicht hat und wir verlasssen uns auf einen Externen Server
+    sprich wird es auf der anderen Seite geändert oder gelöscht, entsteht ein Fehler. Auserdem laden lokal gehostete bilder schneller und zuverlässiger. */
+    
+#html5{
+    height: 300px;
+    width: auto;
+}
+
+#css3{
+    height: 300px;
+    width: auto;
+}
