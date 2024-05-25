@@ -9,3 +9,35 @@
     width: 300px;
     background-color: #FF0000;
 }
+
+#rgb{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(33, 77, 99);
+}
+
+#rgba{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(94, 180, 199, 0.1);
+}
+
+.hintergrund{
+    width: 400px;
+    height: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: rgb(121, 121, 121);
+}
+
+#hsl{
+    height: 300px;
+    width: 300px;
+     background-color: hsl(217, 100%, 33%);  /* bei _, 100%, 100% ist jede Farbe/Hue = H -> weiss */
+}
+
+#hsla{
+    height: 300px;
+    width: 300px;
+    background-color: hsla(217, 100%, 33%, 0.2);
+}
