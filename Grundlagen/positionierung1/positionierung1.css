@@ -1,0 +1,52 @@
+#relativesDiv{
+    width: 400px;
+    height: 400px;
+    background-color: grey;
+    position: relative;  /*Mit (relative) richtet sich das Element relativ zu sich selbst aus, (zu seiner eigentlichen Position). Top heisst, von seiner position quasi als Linie abstand, also nach unten verschieben */
+                        /* Right heisst von der jetzigen oder vorherigen Position rechts weg, also nach links. Left heisst von seiner jetzigen/vorherigen Position als Startpunkt weg, also nach rechts. */
+    top: 40px;
+    left: 60px;
+}
+
+#absolutesDiv{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+                                  /* Spielerei, Mitte, Mitte */
+    /* position: relative;
+    top: 125px;
+    left: 125px; */
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+
+span{
+    position: relative; /* relativ zu seiner eigenen Position verschieben */ 
+    top: 20px;          /* (top -> vom uhrsprünglicher pos(top), nach unten) */
+    left: 52px;         /* (left -> vom uhrsprünglicher pos(left) aus, nach rechts) */
+}
+
+b{
+    position: absolute; /* absolut zu der Position des Mutter-Elements ( In dem Fall Body(oben links = 0, 0)) verschieben */
+    top: 20px;          /* (top -> vom uhrsprünglicher pos(top) oben liks 0,0, nach unten) */
+    left: 20px;         /* (left -> vom uhrsprünglicher pos(left) aus oben links 0,0, nach rechts) */
+}
+
+#outer{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    position: absolute;
+    top: 95px;
+    left:500px;
+}
+
+#inner{
+    width: 100px;
+    height: 100px;
+    background-color: #ffff;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
