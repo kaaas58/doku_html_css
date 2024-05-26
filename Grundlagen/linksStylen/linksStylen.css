@@ -1,0 +1,22 @@
+/*   LoVe Fears HAte    ->  link/visited/focus/hover/active     */
+/*   LoVe HAte          ->  link/visited/hover/active      */
+
+a:link{
+    color: #000;
+}
+
+a:visited{
+    color: rgb(163, 163, 163);
+}
+
+/* a:focus{
+
+} */
+
+a:hover{
+    color: blue;
+}
+
+a:active{
+    color: red;
+}
