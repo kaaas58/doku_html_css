@@ -1,0 +1,25 @@
+/* 
+
+Bookmarks ist das Verfahren ID s in divs, headings etc. 
+direkt anzusteuern, quasi an die Stelle mit der ID zu 
+springen über das a href Attribut. 
+
+Syntax: <a href="bookmark2.html#uz">Zum Bookmark auf 2te Seite!</a> 
+
+*/
+
+div{
+    height: 280px;
+    width: 280px;
+    background-color: #00f;
+    margin-bottom: 20px;
+    border: 10px solid #00f;
+    border-radius: 15px;
+}
+
+#uz{
+    border-radius: 15px;
+    height: 280px;
+    width: 280px;
+    border: 10px solid #f00;
+}
