@@ -1,3 +1,6 @@
+/* background: color image repeat attachment position */
+
+
 div{
     width: 600px;
     height: 600px;
@@ -26,4 +29,40 @@ div{
 #test05{
     background-image: url("hintergrund.png");
     background-repeat: no-repeat ;
+}
+
+#test06{
+    background-image: url("hintergrund.png");
+    background-repeat: no-repeat ;
+    background-position: right top; /* x|right left   ,   y|top bottom */
+}
+
+/* middle ba %*/
+#test07{
+    background-image: url("hintergrund.png");
+    background-repeat: no-repeat ;
+    background-position: 50% 50%; /*x , y*/
+}
+/* middle by px */
+#test08{
+    background-image: url("hintergrund.png");
+    background-repeat: no-repeat ;
+    background-position: right 200px bottom 300px; /* (von rechts 200px nach links, vom bottom aus 300px nach oben) verschieben */
+}
+
+/* middle by center */
+/* #test09{
+    background-image: url("hintergrund.png");
+    background-repeat: no-repeat ;
+    background-position: center ; 
+} */
+
+#test09{
+    background-image: url("hintergrund.png");
+    background-attachment: fixed;
+}
+
+#test10{
+    /* background: #FF5EA2 url(hintergrund.png) repeat-y fixed left 20px top 30px; */
+    background: #FF5EA2 url(hintergrund.png) fixed left 20px top 30px repeat-y;
 }
