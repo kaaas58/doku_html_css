@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Emmet</title>
+        <link rel="stylesheet" type="text/css" href=".css">
+    </head>
+
+    <body>
+
+
+        <!----------------------------- ------------------------------>
+        
+        <!-- einfache Elemente -->
+        
+        div
+        
+        <div></div>        
+        
+        <!-- Mehrfachelemente -->
+        
+        div*3
+        
+        <div></div>
+        <div></div>
+        <div></div>
+        
+        <!-- Kalssenelemente -->
+        
+        div.test
+        
+        <div class="test"></div>
+        
+        <!-- ID-Selektoren -->
+        
+        div#test
+        
+        <div id="test"></div>
+        
+        <!-- Elemente mit Kindelementen -->
+        
+        div>h1
+        
+        <div>
+            <h1></h1>
+        </div>
+        
+        <!-- Elemente mit Geschwisterelementen -->
+        
+        div+h1
+        
+        <div></div>
+        <h1></h1>
+        
+        <!-- Die Hirachie aufsteigen -->
+        
+        div>h1^p
+        
+        <div>
+            <h1></h1>
+        </div>
+        <p></p>
+        
+        <!-- Elemente mit Inhalt -->
+
+        div{emmet ist voll super!}
+        
+        <div>emmet ist voll super!</div>
+        
+        <!----------------------------- ------------------------------>
+        
+        <!-- Elemente mit eigenen Attributen -->
+        
+        h1[role="Überschift"]
+
+        <h1 role="Überschift"></h1>
+        
+        h1[role="Überschift" data-value="5"]
+        
+        <h1 role="Überschift" data-value="5"></h1>
+
+        <!-- Nummerierung -->
+
+        div.test$*5
+
+        <div class="test1"></div>
+        <div class="test2"></div>
+        <div class="test3"></div>
+        <div class="test4"></div>
+        <div class="test5"></div>
+
+        <!-- Nummerierung (mit mehreren Stellen) -->
+        
+        div.test$$$*12
+        
+        <div class="test001"></div>
+        <div class="test002"></div>
+        <div class="test003"></div>
+        <div class="test004"></div>
+        <div class="test005"></div>
+        <div class="test006"></div>
+        <div class="test007"></div>
+        <div class="test008"></div>
+        <div class="test009"></div>
+        <div class="test010"></div>
+        <div class="test011"></div>
+        <div class="test012"></div>
+        
+        <!-- Nummerierung (mit mehreren Stellen) und Inhalt -->
+
+        div#test$${hih}*10
+        
+        <div id="test01">hih</div>
+        <div id="test02">hih</div>
+        <div id="test03">hih</div>
+        <div id="test04">hih</div>
+        <div id="test05">hih</div>
+        <div id="test06">hih</div>
+        <div id="test07">hih</div>
+        <div id="test08">hih</div>
+        <div id="test09">hih</div>
+        <div id="test10">hih</div>
+
+        <!-- Nummerierung (mit Startwert) -->
+
+        div.test$@3*8
+        
+        <div class="test3"></div>
+        <div class="test4"></div>
+        <div class="test5"></div>
+        <div class="test6"></div>
+        <div class="test7"></div>
+        <div class="test8"></div>
+        <div class="test9"></div>
+        <div class="test10"></div>
+
+        <!-- Nummerierung (rückwärts) -->
+
+        div.test$$@-*10
+
+        <div class="test10"></div>
+        <div class="test09"></div>
+        <div class="test08"></div>
+        <div class="test07"></div>
+        <div class="test06"></div>
+        <div class="test05"></div>
+        <div class="test04"></div>
+        <div class="test03"></div>
+        <div class="test02"></div>
+        <div class="test01"></div>
+
+        <!-- Nummerierung (rückwärts und mit Startwert) -->
+
+        div.test$@-5*10
+
+        <div class="test14"></div>
+        <div class="test13"></div>
+        <div class="test12"></div>
+        <div class="test11"></div>
+        <div class="test10"></div>
+        <div class="test9"></div>
+        <div class="test8"></div>
+        <div class="test7"></div>
+        <div class="test6"></div>
+        <div class="test5"></div>
+
+        <!-- Abkürzungen gruppieren -->
+
+        div>(p>span)+div
+        
+        <div>
+            <p><span></span></p>
+            <div></div>
+        </div>
+
+        div>p>span^div
+        
+        <div>
+            <p><span></span></p>
+            <div></div>
+        </div>
+
+        (div>p>span+div)
+        
+        <div>
+            <p>
+                <span></span>
+                <div></div>
+            </p>
+        </div>
+        
+        <!-- Multiplikator -->
+
+        (div>p>span+div)*2
+        
+        <div>
+            <p>
+                <span></span>
+                <div></div>
+            </p>
+        </div>
+        <div>
+            <p>
+                <span></span>
+                <div></div>
+            </p>
+        </div>
+        
+        ((h1{Überschift_$}+div.main>p.span$>span+div)br)*2
+
+        <h1>Überschift_1</h1>
+        <div class="main">
+            <p class="span1">
+                <span></span>
+                <div></div>
+            </p>
+        </div>
+        <br>
+        <h1>Überschift_2</h1>
+        <div class="main">
+            <p class="span2">
+                <span></span>
+                <div></div>
+            </p>
+        </div>
+        <br>
+        
+    </body>
+    
+</html>
