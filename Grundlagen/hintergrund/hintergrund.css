@@ -4,3 +4,26 @@ div{
     border: 2px solid grey;
     margin-bottom: 20px;
 }
+
+#test01{
+    background-color: #FF5EA2;
+}
+
+#test02{
+    background-image: url("hintergrund.png");
+}
+
+#test03{
+    background-image: url("hintergrund.png");
+    background-repeat: repeat-x ;
+}
+
+#test04{
+    background-image: url("hintergrund.png");
+    background-repeat: repeat-y ;
+}
+
+#test05{
+    background-image: url("hintergrund.png");
+    background-repeat: no-repeat ;
+}
