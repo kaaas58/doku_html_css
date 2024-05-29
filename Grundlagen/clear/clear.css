@@ -1,0 +1,27 @@
+p{
+    background-color: grey;
+}
+
+.float-left{
+    float: left;
+}
+
+/* wir schließen hiermit float auf der linken Seite aus. */
+.clear-left{
+    clear: left;
+}
+
+
+
+/* wir schließen hiermit float auf der linken Seite aus. */
+.float-right{
+    float: right;
+}
+
+.clear-right{
+    clear: right;
+}
+
+.clear-both{
+    clear: both;
+}

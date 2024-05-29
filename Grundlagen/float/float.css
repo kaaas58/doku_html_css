@@ -1,0 +1,23 @@
+p{
+    background-color: grey;
+
+}
+
+/* 
+(die gefl. werden unsichtbar für folgende Geschwisterelemente 
+aber nicht für dewren Inhalt)
+
+float-Elemente werden aus dem Elementfluss entnommen, die nächsten Elemente
+nehmen sie nicht mehr wahr und die gefloateden Elemente rutschen in das nächste 
+Element hinein. Der Inhalt des nächsten Elements reagiert aber sehr wohl auf die 
+gefloateten Elemente. Es wird quasi ledigtlich der Rahmen der gefloateden Elemente 
+außer Kraft gestetzt, plus die Anordnung der gefloateden Elemente gerichtet. 
+                            (float-right/float-left). 
+*/
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
