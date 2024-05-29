@@ -1,0 +1,30 @@
+.test{
+    width: 600px;
+    height: 600px;
+    background-color: grey;
+}
+
+
+/* 
+@media (  ) ist quasi ein Trigger der 
+auf einen bestimmten Wert lauscht und 
+führt dann die Werte in der folgenden 
+Klammer aus {   Selektor {
+
+                    Wert: paar;
+                    Wert: paar;
+                    Wert: paar;
+    
+        }    
+} 
+*/
+
+
+@media (width: 1000.02px){
+
+    .test{
+        width: 500px;
+        height: 500px;
+        background-color: red;
+    }
+}

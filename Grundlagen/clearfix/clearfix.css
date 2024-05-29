@@ -1,0 +1,38 @@
+.container{
+    background-color: grey; 
+    /* Alternativ */
+    /* stellt höhe wieder her */
+    /* height: 200px; */
+}
+
+/* Da das image im div gefloated wurde, wird das div aus dem Elementenfluss 
+entnommen, dadurch hat das div zwar eine Hintergrundfarbe aber keinen Inhalt
+und somit keine Grtöße mehr. Ergo unsichtbar. */
+img{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+
+/* Alternativ */
+/* stellt Höhe wieder her */
+
+/* div{
+    height: 200px;
+} */
+
+
+/* Das clearfix steigt mit seienm after quasi hinter/unter dem jpg ein und somit
+hat es quasi die selb endposition wie das jpg an dem es auftaucht, direkt dahinter.
+Auch wenn das jpg gefloated ist wird die Position von dem ::after quasi übernommen und 
+da das ::after nicht gefloatet ist hat dass div wieder eine Höhe und wird mit Hintergrund angezeigt. */
+.clearfix::after{
+    content: ""; /*kein Inhalt, keine Höhe*/
+    clear: both; /*clear both = (kein float: right, kein float: left)*/
+    display: block;
+}
+
+p{
+    background-color: red;
+}
