@@ -129,6 +129,25 @@ body{
     background-size: contain;   /*  Hintergrundbild passt sich an die Größe des Elemnts an in dem es sich befindet. */
 }
 
+/* === Grid-System (SICHTABRKEIT) === */
+
+/* (.border) steht für die Klasse boreder und nach dem , 
+das (.border *) steht für alle eingeschlossenen Elemente 
+in dem Element mit der Klasse(.border)
+
+    <div class="container border">
+        /////////
+        /////////
+        /////////
+        /////////
+    </div> */
+
+.border, .border *{
+
+}
+
+
+
 /* === Grid-System === */
 
 .container{
