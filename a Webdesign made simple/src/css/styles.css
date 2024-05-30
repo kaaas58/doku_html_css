@@ -1,6 +1,6 @@
 /* === FARBEN ==== */
 
-/* 
+/* colors old 
 blue:       #1F4E8C
 dGrau:      #3D3F45
 lGrau       #E5E5E5
@@ -128,3 +128,28 @@ body{
     padding-top: 15.625%;
     background-size: contain;   /*  Hintergrundbild passt sich an die Größe des Elemnts an in dem es sich befindet. */
 }
+
+/* === Grid-System === */
+
+.container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*='col-']{
+    float: left;
+    min-height: 1px;
+    padding: .8rem;
+}
+
+.col-1{width: 16.666%;  }
+.col-2{width: 33.333%;  }
+.col-3{width: 50%;      }
+.col-6{width: 100%;     }
