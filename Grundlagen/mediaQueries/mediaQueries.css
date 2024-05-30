@@ -19,12 +19,41 @@ Klammer aus {   Selektor {
 } 
 */
 
+/* Elementselektoren mit Trigger quasi */
 
+/* Dießen code eventuell nach unten verschieben, hinter yellow 
+min width 800px, da so wie jetzt geschrieben ein Konflikt besteht 
+und beide Regeln gleichwertig sind, setzt sich die untere der beiden durch.
+Wenn hinter Yellow gesetzt ist klappt es */
 @media (width: 1000.02px){
 
     .test{
         width: 500px;
         height: 500px;
         background-color: red;
+    }
+}
+
+
+/* Das Fenster muss min 800px haben damit die Regel 
+zum tragen kommt. Unterschreiten wir 800px schaltet 
+sich die Regel/Parameter für .test aus. */
+@media (min-width: 800px){
+
+.test{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+}
+
+
+}
+
+@media (max-width: 400px){
+
+    .test{
+        width: 400px;
+        height: 400px;
+        background-color: green;
     }
 }
