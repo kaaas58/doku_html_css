@@ -47,6 +47,9 @@ body{
     display: block;
     clear: both;
 }
+.active{
+background-color: var(--c-sRed) !important;
+}
 
 /* === NAVIGATIONSLEISTE === */
 
@@ -118,9 +121,6 @@ body{
 
 
 
-.active{
-    background-color: var(--c-sRed);
-}
 
 /* === NAVIGATIONSLEISTE (MOBIL) === */
 
@@ -134,6 +134,7 @@ body{
     border-radius: 7px;
     position: relative;
     margin-top: .3rem;
+    margin-bottom: .3rem;    
 }
 
 .mobile-nav-button > span{
@@ -152,12 +153,43 @@ body{
 
 .mobile-nav-dropdown{
     position: relative;
+    display: inline-block;
+    float: right;
 }
 
 .mobile-nav-content{
     position: absolute;
     right: 0;
     top: 45px;
+    display: none;
+}
+
+.mobile-nav-dropdown:hover > .mobile-nav-content{
+    display: block;
+}
+
+
+/* Selektoren mit Kindselektor dind in der Hirachie wertiger als 
+unspezifissche, welche eine nur eine Klasse selektiert ohne Kind..
+Sonst, wenn Selektoren gleichwertig sind, 
+zählt der letzte der gleichwertigen sellektoren im Code.  
+
+Wenn wir die Hirachie einfach umgehen wollen bekommt der niedriger
+wertige Selektor ein (!important) am Ende des auszuführenden Codes
+{........!importent}. Kein Selektor kann !important überschreiben.
+*/
+
+.mobile-nav{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+    }
 }
 
 /* === HEADER-BANNER === */
@@ -166,10 +198,10 @@ body{
     background: url(../img/hintergrund.jpg) no-repeat;
     width: 100%;
     height: 0;                 /*   height hilft nicht, bei auto geht es auf 0, da height
-                                    mit 0 nichts anfangen kann und da bei einem festen Wert 
-                                    in px das Bild in der Höhe nicht mitskaliert, setze ich 
-                                    height auf 0 und regel das Über das padding-top Element. 
-                                    padding-top bezieht sich auf die Höhe. Da sie aber in 
+    mit 0 nichts anfangen kann und da bei einem festen Wert 
+    in px das Bild in der Höhe nicht mitskaliert, setze ich 
+    height auf 0 und regel das Über das padding-top Element. 
+    padding-top bezieht sich auf die Höhe. Da sie aber in 
                                     Prozent angegeben wird bezieht sie sich auf die Breite. 
                                     Bzw. ist von dießer abhängig. Somit ist die Höhe wieder skalierbar*/
 
