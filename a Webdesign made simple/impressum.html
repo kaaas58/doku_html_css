@@ -6,6 +6,12 @@
         <title>Impressum</title>
         <link rel="stylesheet" type="text/css" href="src/css/styles.css">
 
+        <!-- Wir beziehen uns auf den Viewport | mit content="width=device-width" sagen wir breite = Gerätebreite.
+        Also nicht Original websidegröße runterscalliert(default) sondern initial die Größe des devices übernehmen.
+        Mit initial-scale sagen wir dass beim laden die Webside einen Zoom von 1 also keinen hat. -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +21,29 @@
 
     <body>
 
-     <!-- NAVIGATIONSLEISTE -->
+       <!-- NAVIGATIONSLEISTE -->
 
-     <nav class="header-nav">
-            
-        <a href="index.html">
-            <img src="src/img/webdesign-logo.png" alt="Das Logo von Webdesign made simpel">
-        </a>
+       <nav class="header-nav">
 
-        <ul>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="leistungen.html">Leistungen</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li class="active"><a href="impressum.html">Impressum</a></li>
-        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+
+                    <a href="index.html">
+                        <img src="src/img/webdesign-logo.png" alt="Das Logo von Webdesign made simpel">
+                    </a>
+        
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li class="active"><a href="impressum.html">Impressum</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        
     </nav>
 
         <header class="header-banner-klein"></header>

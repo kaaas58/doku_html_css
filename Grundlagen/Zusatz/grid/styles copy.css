@@ -112,33 +112,6 @@ body{
     background-color: var(--c-sRed);
 }
 
-/* === NAVIGATIONSLEISTE (MOBIL) === */
-
-.mobile-nav-button{
-    color: #FFF;
-    float: right;
-    font-size: 2rem;
-    border: 1px solid #fff;
-    width: 35px;
-    height: 35px;
-    border-radius: 7px;
-    position: relative;
-    margin-top: .3rem;
-}
-
-.mobile-nav-button > span{
-    position: absolute;
-    bottom: -3px;
-    left: 7.4px;
-}
-
-.mobile-nav-content > ul > li{
-    display: block;
-    background-color: var(--c-dGray);
-    height: 50px;
-    padding: 0 1.2rem;
-}
-
 /* === HEADER-BANNER === */
 
 .header-banner{
