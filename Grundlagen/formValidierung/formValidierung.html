@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <title>formValidierung</title>
+    </head>
+
+    <body>
+
+        <form action="formValidierung.html" method="get">
+
+            <label for="validieren"></label>
+            <input id="validieren" type="text" name="email" pattern="(?:[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+(?:\.[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9\-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Gib eine gültige E-Mail Addresse ein!">
+            <!-- Erklärung des Musters :
+
+            .: Ein Punkt steht für genau ein beliebiges Zeichen, außer Zeilenumbrüche.
+            *: Ein Sternchen nach einem Zeichen bedeutet, dass das vorherige Zeichen null oder mehrmals vorkommen kann.
+            .*: Zusammen bedeutet dies also „null oder mehr beliebige Zeichen“.
+            Ruben: Dies ist die genaue Zeichenfolge "Ruben".
+            .* (am Ende): Wieder „null oder mehr beliebige Zeichen“. -->
+
+
+
+
+            <!-- <label for="email">E-mail</label> 
+            <br>
+            <input id="email" type="email" name="email"> -->
+            
+            <!-- Input type="email" hase a included regex like (pattern=".*@.*") -->
+            
+            <br>
+            <button type="submit">Absenden</button>
+        </form>
+
+    </body>
+
+</html>

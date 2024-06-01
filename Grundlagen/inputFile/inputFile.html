@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <title>inputFile</title>
+    </head>
+
+    <body>
+
+        <!-- Dateien gehen nur über post method. -->
+        <!-- enctyple in encodierungstyp, multipart/formdata, guckt dass namen von der Datei nicht mit codiert werden. -->
+    <form action="inputFile.html" method="post" enctype="multipart/form-data">
+
+
+        <fieldset>
+            <legend>Datei-Upload</legend>
+            <label for="datei">Datei hochladen</label>
+            <input id="datei" type="file" name="datei">    
+        </fieldset>
+            <br>
+            <button type="submit">Absenden</button>
+    </form>
+        
+    <!-- In devTools -> Nework inputFile Payload -> kann man die Datei sehen die mitgeliefert wird.  -->
+    
+    </body>
+
+</html>

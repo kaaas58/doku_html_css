@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <title>forms</title>
+        <style>
+            fieldset{
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+
+<!--    Action -> sgt wohin, php etc z.b. registrieren.php / method
+
+        Method -> sagt wie übertrageb wird. (get oder post)
+            get übergibt sichgtbar in adresszeile. gut zum adresse mit unterauswahl weitergeben.
+            nicht für sensible Daten.
+
+        Sensible Daten mit post senden, diese sind  in adresszeile nicht zusehen aber auch nicht komplett unsichtbar.
+        Sie landen in den dev tools in network. Sie müssen mit gescripted, verschlüsselt werden. (php. etc.)
+
+        Deafault -> <form></form> übergibt an selbe Seite mit der get Methode. Also vorne herum. -->
+
+
+        <!-- Labels immer benutzen, ach im grund des barierefreien Internets. Wirkt auich bei Lasbels display: none. -->
+
+    <form action="forms.html" method="get">
+
+        <fieldset>
+        
+            <legend>Personen-Daten</legend>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" value="" placeholder="Dein Name"><br><br>
+
+                <fieldset>
+                        
+                    <legend>Geschlecht</legend>
+                    <label for="männlich">Männlich</label>
+                    <input id="männlich" type="radio" name="geschlecht" value="m"><br><br>
+                    <label for="weiblich">Weiblich</label>
+                    <input id="weiblich" type="radio" name="geschlecht" value="w"><br><br>
+                
+                </fieldset>
+        
+        </fieldset>          
+        <br><br>
+        <fieldset>
+        
+            <legend>Login-Daten</legend>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Deine Email"><br><br>
+            <label for="password">Password:</label>
+        
+            <input type="password" name="password" placeholder="Password"><br><br>
+        
+        </fieldset>
+        
+        <br><br>
+            
+        <button type="submit">Absenden</button>
+
+    </form>
+
+
+
+        <!-- http://127.0.0.1:5500/Grundlagen/forms/forms.html?name=Lukas&geschlecht=m&password=1234 -->
+
+        <!-- QuerrySelektor -> ?name=Lukas&geschlecht=m&password=1234 ab dem Fargezeichen -->
+
+
+    </body>
+
+</html>
