@@ -47,8 +47,25 @@ body{
     display: block;
     clear: both;
 }
+
 .active{
 background-color: var(--c-sRed) !important;
+}
+
+.wichtiger-text{
+    font-weight: bold;
+}
+
+.screenreader{
+    display: none;
+}
+
+.btn-typ-1{
+    background-color: var(--c-sRed);
+    border: 2px solid var(--c-sRed);
+    border-radius: 3px;
+    color: #FFF;
+    margin: .4rem .6rem;
 }
 
 /* === NAVIGATIONSLEISTE === */
@@ -228,6 +245,38 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     background-size: contain;   /*  Hintergrundbild passt sich an die Größe des Elemnts an in dem es sich befindet. */
 }
 
+/* === NEWSLETTER-BEREICH === */
+
+.newsletter-bereich{
+    width: 100%;
+    background-color: var(--c-dGray);
+}
+
+#nb-werbetext{
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+#nb-form{
+    width: 100%;
+    margin-top: .4rem;
+    float: right;
+    text-align: right;
+}
+
+.nb-email-input{
+    width: 78%;
+    height: 35px; 
+    border: 2px solid #fff;
+    padding: .4rem .4rem;
+
+}
+
+#nb-btn{
+    height: 35px;
+}
+
+
 
 /* ---------------------------------------- === Grid-System (SICHTABRKEIT) === */
 
@@ -286,6 +335,7 @@ p{
 .col-1{width: 16.666%;  }
 .col-2{width: 33.333%;  }
 .col-3{width: 50%;      }
+.col-4{width: 66.666;   }
 .col-6{width: 100%;     }
 
 /* 
@@ -307,6 +357,7 @@ p{
     .col-1{width: 50%;}
     .col-2{width: 100%;}
     .col-3{width: 100%;}
+    .col-4{width: 100%;}
 }
 
 @media (max-width: 480px){
@@ -314,4 +365,5 @@ p{
     .col-1{width: 100%;}
     .col-2{width: 100%;}
     .col-3{width: 100%;}
+    .col-4{width: 100%;}
 }
