@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <title>forms</title>
+    </head>
+
+    <body>
+
+<!--    Action -> sgt wohin, php etc z.b. registrieren.php / method
+
+        Method -> sagt wie übertrageb wird. (get oder post)
+            get übergibt sichgtbar in adresszeile. gut zum adresse mit unterauswahl weitergeben.
+            nicht für sensible Daten.
+
+        Sensible Daten mit post senden, diese sind  in adresszeile nicht zusehen aber auch nicht komplett unsichtbar.
+        Sie landen in den dev tools in network. Sie müssen mit gescripted, verschlüsselt werden. (php. etc.)
+
+        Deafault -> <form></form> übergibt an selbe Seite mit der get Methode. Also vorne herum. -->
+
+        <form action="forms.html" method="get">
+
+            <input type="text" name="name" value="" placeholder="Dein Name">
+            <br><br>
+            <input type="radio" name="geschlecht" id="" value="m">männlich
+            <br><br>
+            <input type="radio" name="geschlecht" id="" value="w">weiblich
+            <br><br>
+            <input type="email" placeholder="Deine Email">
+            <br><br>
+            <input type="password" name="password" placeholder="Password">
+            <br><br>
+            <button type="submit">Absenden</button>
+        </form>
+
+
+        <!-- http://127.0.0.1:5500/Grundlagen/forms/forms.html?name=Lukas&geschlecht=m&password=1234 -->
+
+        <!-- QuerrySelektor -> ?name=Lukas&geschlecht=m&password=1234 ab dem Fargezeichen -->
+
+
+    </body>
+
+</html>
