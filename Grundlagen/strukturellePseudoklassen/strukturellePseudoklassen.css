@@ -1,0 +1,119 @@
+:root{
+    font-size: 25px;
+}
+
+p:empty{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.container :first-child{
+    font-weight: bold;
+}
+
+.container :last-child{
+    text-decoration: underline;
+}
+
+.container :nth-child(5){
+    text-decoration: underline;
+    color: red;
+}
+
+/* Alle geraden = even */
+.container :nth-child(even){
+background-color: grey;
+}
+
+/* Alle ungeraden = odd */
+.container :nth-child(odd){
+background-color: rgb(182, 182, 182);
+}
+
+.container :nth-child(3n+1){
+    color: aqua;
+    text-decoration: line-through;
+}
+
+/* Von hinten gezählt */
+.container :nth-last-child(6){
+    color: red;
+}
+
+/* .container :nth-child(even){
+    width: 200px;
+}
+
+.container :nth-child(odd){
+    width: 400px;
+} */
+
+.container :nth-last-child(even){
+    width: 300px;
+}
+
+.container :nth-last-child(odd){
+    width: 400px;
+}
+
+/* 3*0+1=1  3*1+1=4 3*2+1=7 */
+.container :nth-last-child(3n+1){
+    width: 600px;
+}
+
+/* FIXME Klappt nicht, nachrechachreschaschieren */
+body :only-child{
+   border: 5px solid red;
+}
+
+/* Immer das erste des Typen, eines Typen */
+.container :first-of-type{
+    color: yellow;
+}
+
+.container :last-of-type{
+    color: yellowgreen;
+}
+
+/* Bsp. nur das first of vom type div */
+
+/* .container div:last-of-type{
+    color: yellowgreen;
+} */
+
+.container div:nth-of-type(even){
+    height: 80px;
+}
+
+.container div:nth-of-type(odd){
+    height: 120px;
+}
+
+.container div:nth-of-type(3n+1){
+    height: 400px;
+}
+
+
+
+
+.container div:nth-last-of-type(5){
+    text-align: center;
+}
+
+.container div:nth-last-of-type(even){
+    text-align: right;
+}
+
+.container div:nth-last-of-type(odd){
+    border: 2px solid black;
+}
+
+.container div:nth-last-of-type(3n+1){
+    border: 4px solid green;
+}
+
+
+body :only-of-type{
+    background-color: blueviolet;
+}

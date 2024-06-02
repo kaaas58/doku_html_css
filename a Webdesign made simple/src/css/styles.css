@@ -160,7 +160,7 @@ background-color: var(--c-sRed) !important;
     left: 7.4px;
 }
 
-.mobile-nav-content > ul > li{
+#mobile-nav-content > ul > li{
     display: block;
     background-color: var(--c-dGray);
     height: 50px;
@@ -174,14 +174,14 @@ background-color: var(--c-sRed) !important;
     float: right;
 }
 
-.mobile-nav-content{
+#mobile-nav-content{
     position: absolute;
     right: 0;
     top: 45px;
     display: none;
 }
 
-#mobile-nav-dropdown:hover > .mobile-nav-content{
+#mobile-nav-dropdown:hover > #mobile-nav-content{
     display: block;
 }
 
@@ -211,7 +211,7 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
 
 /* === HEADER-BANNER === */
 
-.header-banner{
+#header-banner{
     background: url(../img/hintergrund.jpg) no-repeat;
     width: 100%;
     height: 0;                 /*   height hilft nicht, bei auto geht es auf 0, da height
@@ -228,7 +228,7 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     background-size: contain;   /*  Hintergrundbild passt sich an die Größe des Elemnts an in dem es sich befindet. */
 }
 
-.header-banner-klein{
+#header-banner-klein{
     background: url(../img/hintergrund-klein.jpg) no-repeat;
     width: 100%;
     height: 0;                 /*   height hilft nicht, bei auto geht es auf 0, da height
@@ -247,7 +247,7 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
 
 /* === NEWSLETTER-BEREICH === */
 
-.newsletter-bereich{
+#newsletter-bereich{
     width: 100%;
     background-color: var(--c-dGray);
 }
@@ -264,7 +264,7 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     text-align: right;
 }
 
-.nb-email-input{
+#nb-email-input{
     width: 78%;
     height: 35px; 
     border: 2px solid #fff;
@@ -277,14 +277,14 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
 }
 
 @media(max-width: 1842px){
- .nb-email-input{
+ #nb-email-input{
     width: 70%;
  }
 }
 
 @media(max-width: 1330px){
 
-    .nb-email-input{
+    #nb-email-input{
         width: 100%;
         margin-bottom: .4rem;
         text-align: center;
@@ -304,14 +304,14 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
         margin-top: 0;
     }
 
-    .newsletter-bereich .col-4{
+    #newsletter-bereich .col-4{
         display: none;
     }
 }
 
 @media(max-width:400px){
 
-    .nb-email-input{
+    #nb-email-input{
         height: 25px;
     }
 
