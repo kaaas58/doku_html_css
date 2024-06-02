@@ -65,12 +65,12 @@ background-color: var(--c-sRed) !important;
     border: 2px solid var(--c-sRed);
     border-radius: 3px;
     color: #FFF;
-    margin: .4rem .6rem;
+    margin: .4rem .0rem;
 }
 
 /* === NAVIGATIONSLEISTE === */
 
-.header-nav{
+#header-nav{
     width: 100%;
     height: 45px;
     background-color: var(--c-dGray);
@@ -79,7 +79,7 @@ background-color: var(--c-sRed) !important;
     font-size: 1rem;
 }
 
-.header-nav a > img{
+#header-nav a > img{
     height: 30px;
     width: auto;
     margin: .4rem;
@@ -87,52 +87,52 @@ background-color: var(--c-sRed) !important;
 }
 
 
-.header-nav ul{
+#header-nav ul{
     margin: 0;
     padding: 0;
     float: right;
     height: 100%;
 }
 
-.header-nav ul > li{
+#header-nav ul > li{
     display: inline-block;
     height: 100%;
     padding: 0 .4rem 0 .4rem;
     
 }
 
-.header-nav ul > li > a{
+#header-nav ul > li > a{
     margin-top: .8rem;
     display: inline-block;
 }
 
-.header-nav ul > li > a:link{
+#header-nav ul > li > a:link{
     color: var(--c-white);
     text-decoration: none;
 }
 
-.header-nav ul > li > a:hover{
+#header-nav ul > li > a:hover{
     color: var(--c-lGray);
     text-decoration: none;
 }
 
-.header-nav ul > li > a:active{
+#header-nav ul > li > a:active{
     color: var(--c-lGray);
     text-decoration: none;
 }
-.header-nav ul > li > a:visited{
+#header-nav ul > li > a:visited{
     color: var(--c-white);
     text-decoration: none;
 }
 
-.header-nav .col-6{
+#header-nav .col-6{
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.header-nav .container,
-.header-nav .row,
-.header-nav .col-6{
+#header-nav .container,
+#header-nav .row,
+#header-nav .col-6{
     height: 100%;
 }
 
@@ -141,7 +141,7 @@ background-color: var(--c-sRed) !important;
 
 /* === NAVIGATIONSLEISTE (MOBIL) === */
 
-.mobile-nav-button{
+#mobile-nav-button{
     color: #FFF;
     float: right;
     font-size: 2rem;
@@ -154,7 +154,7 @@ background-color: var(--c-sRed) !important;
     margin-bottom: .3rem;    
 }
 
-.mobile-nav-button > span{
+#mobile-nav-button > span{
     position: absolute;
     bottom: -3px;
     left: 7.4px;
@@ -168,7 +168,7 @@ background-color: var(--c-sRed) !important;
     text-align: center;
 }
 
-.mobile-nav-dropdown{
+#mobile-nav-dropdown{
     position: relative;
     display: inline-block;
     float: right;
@@ -181,7 +181,7 @@ background-color: var(--c-sRed) !important;
     display: none;
 }
 
-.mobile-nav-dropdown:hover > .mobile-nav-content{
+#mobile-nav-dropdown:hover > .mobile-nav-content{
     display: block;
 }
 
@@ -196,15 +196,15 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
 {........!importent}. Kein Selektor kann !important überschreiben.
 */
 
-.mobile-nav{
+#mobile-nav{
     display: none;
 }
 
 @media (max-width: 768px){
-    .desktop-nav{
+    #desktop-nav{
         display: none;
     }
-    .mobile-nav{
+    #mobile-nav{
         display: block;
     }
 }
@@ -268,13 +268,59 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     width: 78%;
     height: 35px; 
     border: 2px solid #fff;
-    padding: .4rem .4rem;
+    padding: .4rem;
 
 }
 
 #nb-btn{
     height: 35px;
 }
+
+@media(max-width: 1842px){
+ .nb-email-input{
+    width: 70%;
+ }
+}
+
+@media(max-width: 1330px){
+
+    .nb-email-input{
+        width: 100%;
+        margin-bottom: .4rem;
+        text-align: center;
+    }
+
+    #nb-btn{
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+
+    #nb-werbetext{
+        display: none;    
+    }
+    #nb-werbetex{
+        margin-top: 0;
+    }
+
+    .newsletter-bereich .col-4{
+        display: none;
+    }
+}
+
+@media(max-width:400px){
+
+    .nb-email-input{
+        height: 25px;
+    }
+
+    #nb-btn{
+        height: 25px;
+        padding: .1rem;
+    }
+}
+
 
 
 
@@ -335,7 +381,7 @@ p{
 .col-1{width: 16.666%;  }
 .col-2{width: 33.333%;  }
 .col-3{width: 50%;      }
-.col-4{width: 66.666;   }
+.col-4{width: 66.666%;   }
 .col-6{width: 100%;     }
 
 /* 
