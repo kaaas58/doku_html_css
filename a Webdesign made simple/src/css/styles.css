@@ -34,12 +34,23 @@ font-size: 16px;
 body{
     margin: 0;
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+    force{
+        outline: none
+    };
 }
 
 * { 
     box-sizing: border-box;
 }
 
+.row, .col-6, .col-3{
+    text-align: center;
+}
+
+:focus{
+    outline: none;
+    box-shadow: 0 0 5px 2px #e5e5e5, 0 0 10px #e5e5e5;
+}
 /* === GENERELLES === KANN AUF ALLEN SEITEN GENUTZT WERDEN */
 
 .clearfix::after{
@@ -136,7 +147,9 @@ background-color: var(--c-sRed) !important;
     height: 100%;
 }
 
-
+.logo-link{
+    display: inline-block;
+}
 
 
 /* === NAVIGATIONSLEISTE (MOBIL) === */

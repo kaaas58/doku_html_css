@@ -1,0 +1,9 @@
+/* :focus{
+    outline: none;
+    box-shadow:0 0 0 1px rgb(149, 149, 149), 0 0 10px rgb(7, 36, 201);
+} */
+/* kein border üppogremmieren: 30px solid balck; */
+
+:focus{
+    outline: 2px solid #ff7676;
+}
