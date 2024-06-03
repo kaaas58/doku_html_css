@@ -358,6 +358,42 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     }
 }
 
+/* === LEISTUNGEN-BEREICH === */
+
+.leistungs-box{
+    background-color: var(--c-dGray);
+    text-align: center;
+    color: #fff;
+    padding: 1rem 3rem 2.5rem; /* oben|rechtsLinks|unten */
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.8rem;
+}
+
+.leistungs-box > h2{
+    font-size: 1.4rem;
+}
+
+.leistung-ansehen-btn{
+    color: white;
+    text-decoration: none;
+}
+/* (id leistungen-bereich) -> (Nachfahren-Element .row) -> (Kind-Element .col-3) 
+(:nth-last-of-type(even) = Nummer des Typen) -> (die geaden) -> (dort die 
+Leistungs-box/en) je ausgewählt. */
+
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+    margin-left: 1rem;
+}
+
+/* (id leistungen-bereich) -> (Nachfahren-Element .row) -> (Kind-Element .col-3) 
+(:nth-last-of-type(even) = Nummer des Typen) -> (die ungeraden) -> (dort die 
+Leistungs-box/en) je ausgewählt. */
+
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+    margin-right: 1rem;
+}
 
 
 
