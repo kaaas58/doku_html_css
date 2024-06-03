@@ -43,13 +43,18 @@ body{
     box-sizing: border-box;
 }
 
-.row, .col-6, .col-3{
+/* .row, .col-6, .col-3{
     text-align: center;
-}
+} */
 
 :focus{
     outline: none;
     box-shadow: 0 0 5px 2px #e5e5e5, 0 0 10px #e5e5e5;
+}
+
+section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 /* === GENERELLES === KANN AUF ALLEN SEITEN GENUTZT WERDEN */
 
@@ -77,6 +82,23 @@ background-color: var(--c-sRed) !important;
     border-radius: 3px;
     color: #FFF;
     margin: .4rem .0rem;
+}
+
+.intro-container{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+.intro-container > h1{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.intro-container > p{
+    font-size: 1.2rem;
 }
 
 /* === NAVIGATIONSLEISTE === */
@@ -263,6 +285,8 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
 #newsletter-bereich{
     width: 100%;
     background-color: var(--c-dGray);
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 #nb-werbetext{
