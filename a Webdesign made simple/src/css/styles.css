@@ -78,10 +78,29 @@ background-color: var(--c-sRed) !important;
 
 .btn-typ-1{
     background-color: var(--c-sRed);
-    border: 2px solid var(--c-sRed);
+    border: 1px solid var(--c-sRed);
     border-radius: 3px;
     color: #FFF;
-    margin: .4rem .0rem;
+    margin: .7rem .0rem;
+}
+
+.btn-typ-1:hover{
+    background-color: var(--c-sRed);
+    border: 1px solid #FFF;
+}
+
+.btn-typ-2{
+    border: 2px solid #FFF;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #FFF;
+    padding: .4rem .6rem;
+}
+
+.btn-typ-2:hover{
+    color: var(--c-sRed);
+    /* font-weight: bold; */
+    border: 2px solid var(--c-sRed);
 }
 
 .intro-container{
@@ -375,10 +394,37 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     font-size: 1.4rem;
 }
 
+
+/* --------------------------------- */
+
 .leistung-ansehen-btn{
-    color: white;
     text-decoration: none;
+    height: 40px;
+    display: inline-block;
+    padding-top: .5rem;
+    border-radius: 6px;
+    width: 40%;
+    margin-top: 1rem;
 }
+
+.leistung-ansehen-btn:link{
+    color: white;
+}
+
+.leistung-ansehen-btn:visited{
+    color: white;
+}
+
+.leistung-ansehen-btn:active{
+    color: white;
+}
+
+.leistung-ansehen-btn:hover{
+    color: var(--c-sRed);
+    font-weight: bold;
+    border: 2px solid var(--c-sRed);
+}
+
 /* (id leistungen-bereich) -> (Nachfahren-Element .row) -> (Kind-Element .col-3) 
 (:nth-last-of-type(even) = Nummer des Typen) -> (die geaden) -> (dort die 
 Leistungs-box/en) je ausgewählt. */
