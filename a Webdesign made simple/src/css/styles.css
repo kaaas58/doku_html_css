@@ -174,7 +174,7 @@ background-color: var(--c-sRed) !important;
     }
 }
 
-@media (768px){
+@media (max-width: 768px){
     .intro-container > p{
     font-size: 1.2rem;
 }
