@@ -56,6 +56,31 @@ section{
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
+
+@media (max-width: 1366px){
+
+    section{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 1024px){
+
+    section{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    section{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+}
+
 /* === GENERELLES === KANN AUF ALLEN SEITEN GENUTZT WERDEN */
 
 .clearfix::after{
@@ -118,6 +143,41 @@ background-color: var(--c-sRed) !important;
 
 .intro-container > p{
     font-size: 1.2rem;
+}
+
+@media (max-width: 1366px){
+
+    .intro-container > p{
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .intro-container > p{
+        margin-bottom: 0rem;
+    }
+}
+
+
+@media (max-width: 1366px){
+
+    .intro-container{
+        margin-bottom: 0rem;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .intro-container{
+    width: 100%;
+    }
+}
+
+@media (768px){
+    .intro-container > p{
+    font-size: 1.2rem;
+}
 }
 
 /* === NAVIGATIONSLEISTE === */
@@ -404,6 +464,7 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     padding-top: .5rem;
     border-radius: 6px;
     width: 40%;
+    min-width: 100px;
     margin-top: 1rem;
 }
 
@@ -425,6 +486,7 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     border: 2px solid var(--c-sRed);
 }
 
+
 /* (id leistungen-bereich) -> (Nachfahren-Element .row) -> (Kind-Element .col-3) 
 (:nth-last-of-type(even) = Nummer des Typen) -> (die geaden) -> (dort die 
 Leistungs-box/en) je ausgewählt. */
@@ -441,38 +503,43 @@ Leistungs-box/en) je ausgewählt. */
     margin-right: 1rem;
 }
 
-
-
-/* ---------------------------------------- === Grid-System (SICHTABRKEIT) === */
-
-
-/* (.border) steht für die Klasse boreder und nach dem , 
-das (.border *) steht für alle eingeschlossenen Elemente 
-in dem Element mit der Klasse(.border)
-
-    <div class="container border">
-        /////////
-        /////////
-        /////////
-        /////////
-    </div> */
-
-/* .border, .border *{
-    border: 1px solid #ff0101;
+@media (max-width:1366px) {
+    
+    .leistungs-box{
+       
+        width: 80%;
+    }
 }
 
-[class*="col-"]{
-    background-color: #bfddff;
+@media (max-width:1024px) {
+    
+    .leistungs-box{
+       
+        width: 100%;
+        margin-bottom: .6rem;
+      }
+
+    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+        margin-left: .5rem;
+    }
+    
+    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+        margin-right: .5rem;
+    }
+
 }
 
-p{
-    background-color: #91c4ff;
-    padding: 0;
-    margin: 0;
-    color: #ff0000;
-    text-align: center;
-} */
+@media (max-width:768px) {
 
+    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+        margin-left: 0rem;
+    }
+    
+    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+        margin-right: 0rem;
+    }
+
+}
 
 /* ---------------------------------------------- === Grid-System === */
 
