@@ -1,0 +1,40 @@
+table{
+    margin-bottom: 2rem;
+}
+
+/* table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+} */
+
+/* border, border-collapse und border-spacing */
+
+table#test01, table#test01 td, table#test01 th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#test02, table#test02 td, table#test02 th{
+    border: 1px solid black;
+    border-collapse: separate;
+    /* geht nicht bei collapse */
+    border-spacing: 10px;
+}
+
+/* background-color, caption-side, emty-cells, width und table-Layout */
+
+#test03{
+    caption-side: bottom;
+    empty-cells: hide;
+    table-layout: fixed;
+    /* width: 50%; */
+}
+
+#test03, #test03 td, #test03 th{
+    border: 1px solid black;
+
+}
+
+#test03 td, #test03 th{
+    width: 130px;
+}

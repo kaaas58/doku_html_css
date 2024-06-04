@@ -1,0 +1,24 @@
+table#chalange{
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 60%;
+}
+
+table#zusammen{
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 20%;
+}
+
+table#chalange th{
+ background-color: grey;
+ 
+}
+
+table#chalange th td{
+padding: 10px; 
+}
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+}
