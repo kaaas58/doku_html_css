@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <title>picture</title>
+        <link rel="stylesheet" type="text/css" href="picture.css">
+    </head>
+
+    <body>
+
+
+        <picture>
+
+            <!-- Set wäre einb Set aus dem selben bil, verschiedener AUflößung für verschiedene Geräte.
+            <source srcset="logo-gelb.png, logo.gelb2x.png 2x, logo-helb4x.png 4x"> -->
+            <source srcset="logo-gelb.png" media="(max-width: 768px)" type="image/png">
+            <source srcset="logo-rot.png" media="(max-width: 1200px)" type="image/png">
+            <source srcset="logo-blau.png" media="(max-width: 1400px)" type="image/png">
+            <img src="logo-rot.png" alt="Logo">
+
+        </picture>
+        
+
+    </body>
+
+</html>
