@@ -620,7 +620,42 @@ Leistungs-box/en) je ausgewählt. */
     margin-left: 0;
 }
 
+.service-icon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* display: inline-block; Wäre ohne margin */
+    margin-left: auto;
+    margin-right: auto;
+}
 
+#günstig-icon{
+background: var(--c-dGray) url(./../img/services-sprite.png)0 0;
+}
+
+#schnell-icon{
+background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
+
+}
+
+#modern-icon{
+    background: var(--c-dGray) url(./../img/services-sprite.png)-240px 0;
+}
+
+@media (max-width: 768px){
+
+    #service-bereich > .container > .row:nth-of-type(2) .col-2:nth-of-type(3) > .service-box{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px){
+
+    .service-box{
+        width: 100%;
+    }
+}
 
 /* === Grid-System === */
 
