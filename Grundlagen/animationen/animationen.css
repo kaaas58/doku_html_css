@@ -1,0 +1,17 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+@keyframes farbwechsel{
+
+    from{background-color: red;}
+    to{background-color: blue;}
+
+}
+
+#test{
+    animation: farbwechsel;
+    animation-duration: 45s;
+}

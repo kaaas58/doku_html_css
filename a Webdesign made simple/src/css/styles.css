@@ -643,11 +643,21 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
 }
 
 @media (max-width: 768px){
-
-    #service-bereich > .container > .row:nth-of-type(2) .col-2:nth-of-type(3) > .service-box{
+    
+    #service-bereich .row:nth-of-type(2) > .col-2:first-of-type > .service-box{
         margin-right: auto;
         margin-left: auto;
     }
+
+    #service-bereich .row:nth-of-type(2) .col-2:nth-of-type(3) > .service-box{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    /* #service-bereich > .container > .row:nth-of-type(2) .col-2:nth-of-type(3) > .service-box{
+        margin-right: auto;
+        margin-left: auto;
+    } */
 }
 
 @media (max-width: 480px){
