@@ -8,7 +8,13 @@ div{
 
     from{background-color: red;}
     to{background-color: blue;}
-
+    0%{background-color: aqua;}
+    17%{background-color: chartreuse;}
+    34%{background-color: yellow;}
+    51%{background-color: lightblue;}
+    68%{background-color: indigo;}
+    85%{background-color: brown;}
+    100%{background-color: burlywood;}
 }
 
 #test{
