@@ -18,7 +18,7 @@ des Fensters des Layout des Inhates. */
 /* Variables */
 :root{
     --c-white: #FFF;
-    --c-lGray: #E5E5E5;
+    --c-lGray: #f0f0f0;
     --c-dGray: #3D3F45;
     --c-blue: #1F4E8C;
     --c-sRed: #F00;
@@ -583,6 +583,13 @@ Leistungs-box/en) je ausgewählt. */
     }
 }
 
+
+/* === Service-Bereich === */
+
+
+#service-bereich{
+    background-color: var(--c-lGray);
+}
 
 
 
