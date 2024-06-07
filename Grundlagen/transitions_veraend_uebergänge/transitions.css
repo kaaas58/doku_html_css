@@ -1,0 +1,37 @@
+/* 
+Transformation ungsteuerter Effekt der Veränderung. 
+Tansisition: Trigger und Geschwindigkeitgesteuerter Veranderungseffekt
+Animation, gesteuerter Veränderungseffekt jedoch ohne trigger wie hover, etc. 
+*/
+
+
+#test{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    
+
+    
+    transition: width 2s ease-in-out 0.2s, height 2s ease-in-out 0.2s, background-color 2s;
+    
+/* 
+    was will ich transistieren ?
+    transition-property: width, height, background-color;
+
+    Zeit die die Transition dauern soll ?
+    transition-duration: 1s;
+
+    Verzögerung bis die transisition startet / Verzögerung.
+    transition-delay: 0s;
+
+    Geschwindigkeits verlauf beim verändern.
+    timing-function
+ */
+
+}
+
+#test:hover{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
