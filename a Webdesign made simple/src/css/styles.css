@@ -724,6 +724,46 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
         }
     }
     
+
+/* === Footer === */
+
+#footer{
+    background-color: var(--c-dGray);
+    height: 2.8rem;
+    color: rgb(255, 255, 255);
+}
+
+#footer-nav{
+    display: inline-block;
+    float: right;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#footer a:link{
+    text-decoration: none;
+    color: #ffffff;
+}
+#footer a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+#footer a:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+@media (max-width: 500px){
+
+        #footer span{
+     display: none;
+        }
+    }
+
+
+
 /* === Grid-System === */
 
 
