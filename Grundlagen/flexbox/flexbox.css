@@ -8,9 +8,13 @@ body {
     box-sizing: border-box;
 }
 
+
+
+
+
 /* === GRID-SYSTEM (Sichtbarkeit) === */
 
-.border, .border * {
+/* .border, .border * {
     border: 1px solid #91c4ff;
 }
 
@@ -24,11 +28,11 @@ p {
     margin: 0;
     color: white;
     text-align: center;
-}
+} */
 
 /* === GRID-SYSTEM === */
 
-.container {
+/* .container {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -74,4 +78,65 @@ p {
     .col-3 { width: 100%; }
     .col-4 { width: 100%; }
   
+  } */
+  
+  
+
+    p{
+      margin: 0;
+    }
+
+  /* === Flex-Box === */
+
+  /* Flex-container */
+  .flex-container{
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #6db1ff ;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+
+            /* rechts links oder center ausrichtung */
+    /* justify-content: space-around; */
+
+
+            /* verticale anordnung der itmes */
+    /* align-items: center; */
+  
+            /* Umbruch bei genug Stauckung */
+   /* flex-wrap: wrap; */
+            /* vertikale Verteilung */
+   /* align-content: space-around; */
+  }
+
+
+            /* Flex-Items */
+  .flex-container * {
+    /* margin: .8rem; */
+    background-color: rgb(30, 255, 0);
+    /* width: 200px; */
+    /* flex-basis: 200px; */
+  }
+
+  .flex-container > p:nth-of-type(1){
+    background-color:yellow ;
+    /* flex-grow: 1; */
+    flex: 4 4 300px;
+  }
+    
+  .flex-container > p:nth-of-type(2){
+      background-color: red;
+      /* flex-grow: 1; */
+      /* flex-shrink: 0.8; */
+      flex: 1 1 300px;
+  }
+      
+  .flex-container > p:nth-of-type(3){
+    background-color: blue;
+    /* flex-grow: 1; */
+    flex: 1 1 300px;
   }
