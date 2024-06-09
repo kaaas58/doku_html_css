@@ -141,6 +141,8 @@ background-color: var(--c-sRed) !important;
     margin-bottom: 2.5rem;
 }
 
+
+
 .intro-container > h1{
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -444,7 +446,7 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
 
 /* === LEISTUNGEN-BEREICH === */
 
-.leistungs-box{
+.leistungs-teaser-box{
     background-color: var(--c-dGray);
     text-align: center;
     color: #fff;
@@ -455,7 +457,7 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     margin-bottom: 1.8rem;
 }
 
-.leistungs-box > h2{
+.leistungs-teaser-box > h2{
     font-size: 1.4rem;
 }
 
@@ -472,6 +474,7 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     min-width: 100px;
     margin-top: 1rem;
 }
+
 
 .leistung-ansehen-btn:link{
     color: white;
@@ -496,7 +499,7 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
 (:nth-last-of-type(even) = Nummer des Typen) -> (die geaden) -> (dort die 
 Leistungs-box/en) je ausgewählt. */
 
-#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box{
     margin-left: 1rem;
 }
 
@@ -504,13 +507,13 @@ Leistungs-box/en) je ausgewählt. */
 (:nth-last-of-type(even) = Nummer des Typen) -> (die ungeraden) -> (dort die 
 Leistungs-box/en) je ausgewählt. */
 
-#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box{
     margin-right: 1rem;
 }
 
 @media (max-width:1366px) {
     
-    .leistungs-box{
+    .leistungs-teaser-box{
        
         width: 80%;
     }
@@ -518,17 +521,17 @@ Leistungs-box/en) je ausgewählt. */
 
 @media (max-width:1024px) {
     
-    .leistungs-box{
+    .leistungs-teaser-box{
        
         width: 100%;
         margin-bottom: .6rem;
       }
 
-    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box{
         margin-left: .5rem;
     }
     
-    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box{
         margin-right: .5rem;
     }
 
@@ -536,11 +539,11 @@ Leistungs-box/en) je ausgewählt. */
 
 @media (max-width:768px) {
 
-    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box{
         margin-left: 0rem;
     }
     
-    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box{
         margin-right: 0rem;
     }
 
@@ -761,6 +764,113 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
      display: none;
         }
     }
+
+
+
+/* === Leistungen-Seite === */
+
+.flex-cotainer {
+    display: flex;
+    width: 80%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+/* @media (max-width: 1366px){
+
+    .flex-container{
+        width: 90%;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        }
+} */
+
+
+/* -----------------------------------------hellllppp----- */
+
+
+@media (max-width: 1366px){
+
+    .flex-container{
+    width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    }
+ .leistung-auswählen-btn{
+    min-width: 180px;
+ }
+}
+
+.flex-container > .intro-container{
+        width: 100%;
+
+    }
+    
+.leistungs-box{
+    color: #FFF;
+    background-color: var(--c-dGray);
+    flex-basis: 25%;
+    padding: 2rem 4rem;
+    text-align: center;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leistungs-box-empfohlen{
+    flex-basis: 27.5%;
+    min-height: 700px;
+    box-shadow: 0 0 20px 0 var(--c-dGray);
+    font-size: 1.05rem;
+}
+
+@media (max-width: 1782px){
+
+    .leistungs-box{
+        background-color: var(--c-dGray);
+        flex-basis: 30%;
+    }
+    
+    .leistungs-box-empfohlen{
+        flex-basis: 32%;
+    }
+}
+
+.leistungs-box > h1{
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+
+
+.leistungs-box ul{
+    padding: 0;
+}
+
+.leistungs-box li{
+    list-style-position: inside;
+    margin-bottom: .5rem;
+}
+
+.leistung-auswählen-btn{
+    width: 50%;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    min-width: 180px;
+}
+
+.leistung-auswählen-btn:hover{
+   font-weight: normal;
+}
+
+
 
 
 
