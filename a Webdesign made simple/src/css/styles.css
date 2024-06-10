@@ -39,9 +39,9 @@ font-size: 16px;
 body{
     margin: 0;
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
-    force{
+    /* force{
         outline: none
-    };
+    }; */
 }
 
 * { 
@@ -871,8 +871,70 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
 }
 
 
+/* === Kontakt-seite === */
+
+#kontakt-formular input, 
+#kontakt-formular textarea{
+    width: 100%;
+    border: 2px solid var(--c-dGray);
+    border-radius: 4px;
+    padding: .4rem;
+    font-size: 1rem;
+    font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+    color: var(--c-dGray);
+}
 
 
+/* Fixme */
+#kontakt-formular textarea{
+    height: 150px;
+}
+
+
+
+#kontakt-formular{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 1366px){
+    #kontakt-formular{
+    width: 90%;
+    }
+}
+
+@media (max-width: 1024px){
+    #kontakt-formular{
+     width: 100%;
+    }
+}
+
+/* fixme */
+.btn-typ-3{
+    border: 2px solid var(--c-dGray);
+    background-color: transparent;
+    font-size: 1rem;
+    width: 150px;
+    height: 39px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px){
+    .btn-typ-3{
+        width: 100%;
+    }
+}
+
+#kontakt-formular input:hover,
+#kontakt-formular input:focus,
+#kontakt-formular textarea:hover,
+#kontakt-formular textarea:focus,
+#kontakt-formular button:hover{
+    border: 2px solid var(--c-sRed);
+}
 
 /* === Grid-System === */
 
