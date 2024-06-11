@@ -1,0 +1,9 @@
+#mein-div{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+
+#mein-div:hover{
+    background-color: red;
+}

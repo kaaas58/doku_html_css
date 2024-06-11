@@ -28,6 +28,10 @@ des Fensters des Layout des Inhates. */
     --c-blue: #1F4E8C;
     --c-sRed: #F00;
     --c-red: #A62C21;
+    --primaere-schriftart: Raleway;
+    --secundaere-schriftart: Lato;
+    --tertiaere-schriftart: "Helvetica Neue";
+    --quartaere-schrift:
 }
 
 /* === GLOBAL === */
@@ -39,22 +43,10 @@ font-size: 16px;
 body{
     margin: 0;
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
-    /* force{
-        outline: none
-    }; */
 }
 
 * { 
     box-sizing: border-box;
-}
-
-/* .row, .col-6, .col-3{
-    text-align: center;
-} */
-
-:focus{
-    outline: none;
-    box-shadow: 0 0 5px 2px #e5e5e5, 0 0 10px #e5e5e5;
 }
 
 section{
@@ -86,6 +78,12 @@ section{
     }
 }
 
+
+:focus{
+    outline: none;
+    box-shadow: 0 0 5px 2px #e5e5e5, 0 0 10px #e5e5e5;
+}
+
 /* === GENERELLES === KANN AUF ALLEN SEITEN GENUTZT WERDEN */
 
 .clearfix::after{
@@ -106,42 +104,13 @@ background-color: var(--c-sRed) !important;
     display: none;
 }
 
-.btn-typ-1{
-    background-color: var(--c-sRed);
-    border: 1px solid var(--c-sRed);
-    border-radius: 3px;
-    color: #FFF;
-    margin: .7rem .0rem;
-}
-
-.btn-typ-1:hover{
-    background-color: var(--c-sRed);
-    border: 1px solid #FFF;
-}
-
-.btn-typ-2{
-    border: 2px solid #FFF;
-    border-radius: 6px;
-    background-color: transparent;
-    color: #FFF;
-    padding: .4rem .6rem;
-}
-
-.btn-typ-2:hover{
-    color: var(--c-sRed);
-    /* font-weight: bold; */
-    border: 2px solid var(--c-sRed);
-}
-
 .intro-container{
     text-align: center;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
-
-
 
 .intro-container > h1{
     font-size: 1.6rem;
@@ -170,7 +139,7 @@ background-color: var(--c-sRed) !important;
 @media (max-width: 1366px){
 
     .intro-container{
-        margin-bottom: 0rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -181,11 +150,65 @@ background-color: var(--c-sRed) !important;
     }
 }
 
+@media (max-width: 1024px){
+
+    .intro-container{
+    margin-bottom: 1rem;
+    }
+}
+
 @media (max-width: 768px){
     .intro-container > p{
     font-size: 1.2rem;
 }
 }
+
+/* === Buttons === */
+
+.btn-typ-1{
+    background-color: var(--c-sRed);
+    border: 1px solid var(--c-sRed);
+    border-radius: 3px;
+    color: #FFF;
+    margin: .7rem .0rem;
+    transition: border .3s ease-in-out;
+}
+
+.btn-typ-1:hover{
+    background-color: var(--c-sRed);
+    border: 1px solid #FFF;
+}
+
+.btn-typ-2{
+    background-color: transparent;
+    border: 2px solid #FFF;
+    border-radius: 6px;
+    color: #FFF;
+    padding: .4rem .6rem;
+    transition: color .3s ease-in-out, border .9s ease-in-out ;
+}
+
+.btn-typ-2:hover{
+    color: var(--c-sRed);
+    border: 2px solid var(--c-sRed);
+}
+
+.btn-typ-3{
+    background-color: transparent;
+    border: 2px solid var(--c-dGray);
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 150px;
+    height: 39px;
+    margin-bottom: 1rem;
+    transition: border .5s ease-in-out, border-radius .3s ease-in-out, color .4s ease-in-out;
+}
+
+.btn-typ-3:hover{
+    border: 2px solid var(--c-sRed);
+    color: var(--c-sRed);
+}
+
 
 /* === NAVIGATIONSLEISTE === */
 
@@ -220,6 +243,8 @@ background-color: var(--c-sRed) !important;
     
 }
 
+/* ! immer -> link visited active hover ! WICHTIG ! */
+
 #header-nav ul > li > a{
     margin-top: .8rem;
     display: inline-block;
@@ -230,8 +255,8 @@ background-color: var(--c-sRed) !important;
     text-decoration: none;
 }
 
-#header-nav ul > li > a:hover{
-    color: var(--c-lGray);
+#header-nav ul > li > a:visited{
+    color: var(--c-white);
     text-decoration: none;
 }
 
@@ -239,10 +264,14 @@ background-color: var(--c-sRed) !important;
     color: var(--c-lGray);
     text-decoration: none;
 }
-#header-nav ul > li > a:visited{
-    color: var(--c-white);
+
+#header-nav ul > li > a:hover{
+    color: var(--c-lGray);
     text-decoration: none;
 }
+
+
+
 
 #header-nav .col-6{
     padding-top: 0;
@@ -418,6 +447,18 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     }
 }
 
+@media(max-width:400px){
+
+    #nb-email-input{
+        height: 25px;
+    }
+
+    #nb-btn{
+        height: 25px;
+        padding: .1rem;
+    }
+}
+
 @media(max-width: 768px){
 
     #nb-werbetext{
@@ -432,19 +473,52 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     }
 }
 
-@media(max-width:400px){
+/* === Animiertes Logo === */
 
-    #nb-email-input{
-        height: 25px;
-    }
+@keyframes logoAnimation{
+    0%          {transform: rotateZ(0deg);}
+    11.111%     {transform: rotateZ(0deg);}
+    22.222%     {transform: rotateZ(90deg);}
+    33.333%     {transform: rotateZ(90deg);}
+    44.444%     {transform: rotateZ(180deg);}
+    55.555%     {transform: rotateZ(180deg);}
+    66.666%     {transform: rotateZ(270deg);}
+    77.777%     {transform: rotateZ(270deg);}
+    88.888%     {transform: rotateZ(360deg);}
+    100%        {transform: rotateZ(360deg);}
+}
 
-    #nb-btn{
-        height: 25px;
-        padding: .1rem;
+#animiertes-logo{
+    height: 150px;
+    width: 150px;
+    background-color: var(--c-dGray);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    padding-top: 25px;
+}
+
+#animiertes-logo > img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+   animation: logoAnimation 5s ease-in-out infinite alternate;
+}
+
+@media (max-width:768px){
+    #animiertes-logo{
+        display: none;
     }
 }
 
 /* === LEISTUNGEN-BEREICH === */
+
+#leistungen-bereich{
+    padding-top: 1rem;
+}
 
 .leistungs-teaser-box{
     background-color: var(--c-dGray);
@@ -461,6 +535,12 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     font-size: 1.4rem;
 }
 
+@media (max-width: 480px){
+    .leistungs-teaser-box{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
 
 .leistung-ansehen-btn{
     text-decoration: none;
@@ -488,7 +568,6 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
 
 .leistung-ansehen-btn:hover{
     color: var(--c-sRed);
-    font-weight: bold;
     border: 2px solid var(--c-sRed);
 }
 
@@ -606,6 +685,13 @@ Leistungs-box/en) je ausgewählt. */
     font-size: 1.4rem;
 }
 
+@media (max-width: 480px){
+
+    .service-box{
+        width: 100%;
+    }
+}
+
 #service-bereich .row:nth-of-type(2) > .col-2:first-of-type > .service-box{
     margin-right: 0;
     margin-left: auto;
@@ -619,28 +705,6 @@ Leistungs-box/en) je ausgewählt. */
 #service-bereich .row:nth-of-type(2) .col-2:nth-of-type(3) > .service-box{
     margin-right: auto;
     margin-left: 0;
-}
-
-.service-icon{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    /* display: inline-block; Wäre ohne margin */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#günstig-icon{
-background: var(--c-dGray) url(./../img/services-sprite.png)0 0;
-}
-
-#schnell-icon{
-background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
-
-}
-
-#modern-icon{
-    background: var(--c-dGray) url(./../img/services-sprite.png)-240px 0;
 }
 
 @media (max-width: 768px){
@@ -661,11 +725,31 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
     } */
 }
 
-@media (max-width: 480px){
+.service-icon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* display: inline-block; Wäre ohne margin */
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 1s;
+}
 
-    .service-box{
-        width: 100%;
-    }
+.service-icon:hover{
+    transform: rotateZ(360deg);
+}
+
+#günstig-icon{
+background: var(--c-dGray) url(./../img/services-sprite.png)0 0;
+}
+
+#schnell-icon{
+background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
+
+}
+
+#modern-icon{
+    background: var(--c-dGray) url(./../img/services-sprite.png)-240px 0;
 }
 
 /* === Über-uns-Bereich === */
@@ -679,6 +763,10 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
         width: 85%;
         margin-right: auto;
         margin-left: auto;
+    }
+    
+    #über-uns-container p{
+     margin-top: 0;
     }
 
     #über-uns-container > img{
@@ -790,6 +878,10 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
 
 /* -----------------------------------------hellllppp----- */
 
+.flex-container > .intro-container{
+        width: 100%;
+
+    }
 
 @media (max-width: 1366px){
 
@@ -798,16 +890,11 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
     padding-right: 3rem;
     padding-left: 3rem;
     }
- .leistung-auswählen-btn{
+    .leistung-auswählen-btn{
     min-width: 180px;
- }
+    }
 }
 
-.flex-container > .intro-container{
-        width: 100%;
-
-    }
-    
 .leistungs-box{
     color: #FFF;
     background-color: var(--c-dGray);
@@ -828,18 +915,6 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
     font-size: 1.05rem;
 }
 
-@media (max-width: 1782px){
-
-    .leistungs-box{
-        background-color: var(--c-dGray);
-        flex-basis: 30%;
-    }
-    
-    .leistungs-box-empfohlen{
-        flex-basis: 32%;
-    }
-}
-
 .leistungs-box > h1{
     margin-bottom: 0;
     margin-top: 1.5rem;
@@ -855,6 +930,18 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
     margin-bottom: .5rem;
 }
 
+@media (max-width: 1782px){
+
+    .leistungs-box{
+        background-color: var(--c-dGray);
+        flex-basis: 30%;
+    }
+    
+    .leistungs-box-empfohlen{
+        flex-basis: 32%;
+    }
+}
+
 .leistung-auswählen-btn{
     width: 50%;
     height: 2.5rem;
@@ -868,8 +955,11 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
    font-weight: normal;
 }
 
-
 /* === Kontakt-seite === */
+
+#kontakt-bereich{
+    padding-top: 1rem;
+}
 
 #kontakt-formular input, 
 #kontakt-formular textarea{
@@ -880,6 +970,7 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
     font-size: 1rem;
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
     color: var(--c-dGray);
+    transition: border .5s ease-in-out;
 }
 
 
@@ -909,17 +1000,6 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
     }
 }
 
-/* fixme */
-.btn-typ-3{
-    border: 2px solid var(--c-dGray);
-    background-color: transparent;
-    font-size: 1rem;
-    width: 150px;
-    height: 39px;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-}
-
 @media (max-width: 768px){
     .btn-typ-3{
         width: 100%;
@@ -929,13 +1009,20 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
 #kontakt-formular input:hover,
 #kontakt-formular input:focus,
 #kontakt-formular textarea:hover,
-#kontakt-formular textarea:focus,
-#kontakt-formular button:hover{
+#kontakt-formular textarea:focus{
     border: 2px solid var(--c-sRed);
 }
 
 
 /* === Impressum === */
+
+#impressum{
+    padding-top: 1rem;
+}
+
+#impressum h1:first-of-type{
+    margin-bottom: 0;
+}
 
 #impressum a{
     color: grey ;

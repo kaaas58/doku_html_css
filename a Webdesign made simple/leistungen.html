@@ -3,26 +3,43 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Leistungen</title>
-        <link rel="stylesheet" type="text/css" href="src/css/styles.css">
 
         <!-- Wir beziehen uns auf den Viewport | mit content="width=device-width" sagen wir breite = Gerätebreite.
         Also nicht Original websidegröße runterscalliert(default) sondern initial die Größe des devices übernehmen.
         Mit initial-scale sagen wir dass beim laden die Webside einen Zoom von 1 also keinen hat. -->
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
+        <title>Leistungen</title>
+
+
+        <!-- Favicons -->
+         <a href="./src/img/favicons/"></a>
+        <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="./src/img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="./src/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="./src/img/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="./src/img/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Google-Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Average&family=Catamaran:wght@100..900&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Kavivanar&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+        
+        <!-- Autoren-Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="./src/css/styles.css">
     </head>
 
     <body>
 
            <!-- NAVIGATIONSLEISTE -->
 
-           <nav id="header-nav">
+        <nav id="header-nav">
+
+            <!-- Desktop-Navigationsleiste -->
 
             <div class="container" id="desktop-nav">
                 <div class="row">
@@ -42,7 +59,9 @@
                     </div>
                 </div>
             </div>
-            
+
+            <!-- Mobiele-Navigationsleiste -->
+
             <div class="container" id="mobile-nav">
                 <div class="row">
                     <div class="col-6">
@@ -52,9 +71,7 @@
                         </a>
 
                         <div class="clearfix" id="mobile-nav-dropdown">
-
                             <div id="mobile-nav-button"><span>&equiv;</span></div>
-            
                             <div class="clearfix" id="mobile-nav-content">
     
                                 <ul>
@@ -65,14 +82,12 @@
                                 </ul>
     
                             </div>
-
                         </div>
 
-                  
                     </div>
                 </div>
             </div>
-
+            
         </nav>
 
         <!-- Header-Banner -->
