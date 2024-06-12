@@ -320,7 +320,6 @@ background-color: var(--c-sRed) !important;
 
 #mobile-nav-dropdown{
     position: relative;
-    display: inline-block;
     float: right;
 }
 
@@ -823,7 +822,6 @@ background: var(--c-dGray) url(./../img/services-sprite.png)-120px 0;
 }
 
 #footer-nav{
-    display: inline-block;
     float: right;
 }
 
