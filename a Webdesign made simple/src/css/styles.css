@@ -78,12 +78,6 @@ section{
     }
 }
 
-
-:focus{
-    outline: none;
-    box-shadow: 0 0 5px 2px #e5e5e5, 0 0 10px #e5e5e5;
-}
-
 /* === GENERELLES === KANN AUF ALLEN SEITEN GENUTZT WERDEN */
 
 .clearfix::after{
@@ -474,6 +468,19 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
 
 /* === Animiertes Logo === */
 
+@-webkit-keyframes logoAnimation{
+    0%          {transform: rotateZ(0deg);}
+    11.111%     {transform: rotateZ(0deg);}
+    22.222%     {transform: rotateZ(90deg);}
+    33.333%     {transform: rotateZ(90deg);}
+    44.444%     {transform: rotateZ(180deg);}
+    55.555%     {transform: rotateZ(180deg);}
+    66.666%     {transform: rotateZ(270deg);}
+    77.777%     {transform: rotateZ(270deg);}
+    88.888%     {transform: rotateZ(360deg);}
+    100%        {transform: rotateZ(360deg);}
+}
+
 @keyframes logoAnimation{
     0%          {transform: rotateZ(0deg);}
     11.111%     {transform: rotateZ(0deg);}
@@ -504,7 +511,8 @@ wertige Selektor ein (!important) am Ende des auszuführenden Codes
     height: 100px;
     margin-left: auto;
     margin-right: auto;
-   animation: logoAnimation 5s ease-in-out infinite alternate;
+   -webkit-animation: logoAnimation 5s ease-in-out infinite alternate;
+           animation: logoAnimation 5s ease-in-out infinite alternate;
 }
 
 @media (max-width:768px){
